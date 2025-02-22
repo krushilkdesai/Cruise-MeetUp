@@ -11,7 +11,6 @@
      <link rel="stylesheet" href="assets/css/index.css">
      <link rel="stylesheet" href="assets/css/icon-index.css">
      <script src="https://kit.fontawesome.com/8ca4c4f7c7.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -50,23 +49,95 @@
                               </li>
                          </ul>
 
-                         <!-- Login Button -->
+                         <!-- Login Button (Triggers Modal) -->
                          <div class="text-center">
-                              <a href="#" class="btn btn-sponsor">Login</a>
+                              <a href="#" class="btn btn-sponsor" data-bs-toggle="modal"
+                                   data-bs-target="#authModal">Login</a>
                          </div>
                     </div>
                </div>
           </nav>
      </header>
+
+     <!-- Login Modal -->
+     <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content custom-modal">
+                    <div class="modal-header border-0">
+                         <h5 class="modal-title text-center w-100">Login</h5>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <!-- Nav Tabs -->
+                         <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="authTab" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                   <button class="nav-link active" id="login-tab" data-bs-toggle="pill"
+                                        data-bs-target="#login" type="button" role="tab" aria-controls="login"
+                                        aria-selected="true">Login</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                   <button class="nav-link" id="signup-tab" data-bs-toggle="pill"
+                                        data-bs-target="#signup" type="button" role="tab" aria-controls="signup"
+                                        aria-selected="false">Sign Up</button>
+                              </li>
+                         </ul>
+
+                         <!-- Tab Content -->
+                         <div class="tab-content" id="authTabContent">
+                              <!-- Login Form -->
+                              <div class="tab-pane fade show active" id="login" role="tabpanel"
+                                   aria-labelledby="login-tab">
+                                   <form>
+                                        <div class="mb-3">
+                                             <label for="login-username" class="form-label">Username</label>
+                                             <input type="text" class="form-control custom-input" id="login-username"
+                                                  placeholder="Enter your username">
+                                        </div>
+                                        <div class="mb-3">
+                                             <label for="login-password" class="form-label">Password</label>
+                                             <input type="password" class="form-control custom-input"
+                                                  id="login-password" placeholder="Enter your password">
+                                        </div>
+                                        <button type="submit" class="btn btn-sponsor custom-btn w-100">Login</button>
+                                   </form>
+                              </div>
+
+                              <!-- Sign Up Form -->
+                              <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                                   <form>
+                                        <div class="mb-3">
+                                             <label for="signup-username" class="form-label">Username</label>
+                                             <input type="text" class="form-control custom-input" id="signup-username"
+                                                  placeholder="Choose a username">
+                                        </div>
+                                        <div class="mb-3">
+                                             <label for="signup-email" class="form-label">Email</label>
+                                             <input type="email" class="form-control custom-input" id="signup-email"
+                                                  placeholder="Enter your email">
+                                        </div>
+                                        <div class="mb-3">
+                                             <label for="signup-password" class="form-label">Password</label>
+                                             <input type="password" class="form-control custom-input"
+                                                  id="signup-password" placeholder="Create a password">
+                                        </div>
+                                        <button type="submit" class="btn btn-sponsor custom-btn w-100">Sign Up</button>
+                                   </form>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
      <!-- header section end -->
 
      <!-- hero section start -->
-     <section id="homePage" class="hero bg-img" data-background="assets/images/herobg.webp">
+     <section id="homePage" class="hero bg-img" data-background="assets/images/hero-img.png">
           <div class="overlay"></div> <!-- Dark overlay for better text contrast -->
           <div class="container">
-               <div class="hero__area">
+               <div class="hero__area d-flex flex-column align-items-center text-center">
                     <div class="row">
-                         <div class="hero-content col-lg-5">
+                         <div class="hero-content col-lg-11">
                               <main1>
                                    <div class="text1">
                                         <h1>Cruise MeetUp</h1>
@@ -75,12 +146,14 @@
                               <h5>Nurturing The Future of
                                    Finance at Sea</h5>
                               <p>The Premier Red Carpet Event of the Crypto and Forex World</p>
-                              <button class="btn btn-sponsor" type="submit">Discover</button>
                          </div>
                     </div>
                </div>
           </div>
      </section>
+     
+     
+
      <!-- hero section end -->
 
      <!-- sec-2 start-->
@@ -357,7 +430,7 @@
                          </div>
                          <div class="speaker-text">
                               <h5>John Doe</h5>
-                              <h6>Co-Founder</h6>
+                              <h6>CEO & Founder</h6>
                          </div>
                     </div>
                     <div class="col speaker-profile">
@@ -366,7 +439,7 @@
                          </div>
                          <div class="speaker-text">
                               <h5>Jane Smith</h5>
-                              <h6>Co-Founder</h6>
+                              <h6>Marketing Head</h6>
                          </div>
                     </div>
                     <div class="col speaker-profile">
@@ -375,7 +448,7 @@
                          </div>
                          <div class="speaker-text">
                               <h5>Michael Johnson</h5>
-                              <h6>Co-Founder</h6>
+                              <h6>Lead Developer</h6>
                          </div>
                     </div>
                     <div class="col speaker-profile">
@@ -384,7 +457,7 @@
                          </div>
                          <div class="speaker-text">
                               <h5>Emily Brown</h5>
-                              <h6>Co-Founder</h6>
+                              <h6>UX/UI Designer</h6>
                          </div>
                     </div>
                     <div class="col speaker-profile">
@@ -393,7 +466,7 @@
                          </div>
                          <div class="speaker-text">
                               <h5>William Davis</h5>
-                              <h6>Co-Founder</h6>
+                              <h6>Data Scientist</h6>
                          </div>
                     </div>
                     <div class="col speaker-profile">
@@ -402,7 +475,7 @@
                          </div>
                          <div class="speaker-text">
                               <h5>Amy Wilson</h5>
-                              <h6>Co-Founder</h6>
+                              <h6>AI Researcher</h6>
                          </div>
                     </div>
                     <div class="col speaker-profile">
@@ -411,7 +484,7 @@
                          </div>
                          <div class="speaker-text">
                               <h5>David Miller</h5>
-                              <h6>Co-Founder</h6>
+                              <h6>CTO</h6>
                          </div>
                     </div>
                     <div class="col speaker-profile">
@@ -420,7 +493,7 @@
                          </div>
                          <div class="speaker-text">
                               <h5>Sarah Martinez</h5>
-                              <h6>Co-Founder</h6>
+                              <h6>Cybersecurity Expert</h6>
                          </div>
                     </div>
                     <div class="col speaker-profile">
@@ -429,7 +502,7 @@
                          </div>
                          <div class="speaker-text">
                               <h5>James Garcia</h5>
-                              <h6>Co-Founder</h6>
+                              <h6>Blockchain Specialist</h6>
                          </div>
                     </div>
                     <div class="col speaker-profile">
@@ -438,12 +511,13 @@
                          </div>
                          <div class="speaker-text">
                               <h5>Olivia Thomas</h5>
-                              <h6>Co-Founder</h6>
+                              <h6>Product Manager</h6>
                          </div>
                     </div>
                </div>
           </div>
      </section>
+
      <!-- sec-9 end -->
 
      <!-- sec-10 start sponsorPage -->
@@ -630,10 +704,13 @@
 
      <!-- sec-16 start -->
      <section class="bg-creator">
-          <div class="container ptb-50 text-center">
-               <img src="assets/images/index/our-experience.png" width="50%" class="bg_imgcreator">
+          <div class="container text-center py-5">
+               <div class="content-wrapper">
+
+               </div>
           </div>
      </section>
+
      <!-- sec-16 end -->
 
      <!-- sec-17 start -->

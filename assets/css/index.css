@@ -158,6 +158,11 @@ header {
   font-size: 75px;
   margin-bottom: 30px;
 }
+.text1 h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
 .hero__area h5,
 p {
@@ -259,38 +264,7 @@ p {
   transform: translate(50%, -50%);
 }
 
-.cruise-meetup .owl-carousel {
-  overflow: hidden;
-}
 
-.cruise-meetup .owl-stage-outer {
-  margin-left: -3px;
-  margin-right: 3px;
-}
-
-.cruise-meetup .sea .owl-nav.disabled {
-  display: none !important;
-}
-
-.sea .owl-item {
-  padding: 15px;
-  text-align: center;
-  position: relative;
-}
-
-.sea .owl-item::after {
-  content: "";
-  position: absolute;
-  right: -2px;
-  top: 50px;
-  width: 2px;
-  height: 100px;
-  background-color: #FFFFFF;
-}
-
-.sea .owl-item.active:nth-child(3):after {
-  background-color: #ffffff00;
-}
 
 .logo-img {
   width: 10%;
@@ -300,17 +274,7 @@ p {
   font-size: 50px;
 }
 
-.numer {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 25px;
-  color: #fff;
-}
 
-.investors {
-  font-family: 'Sen', sans-serif;
-  color: #fff;
-  font-size: 21px;
-}
 
 .titel {
   font-family: 'Krona One', sans-serif;
@@ -416,167 +380,7 @@ p {
   }
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
 
-main1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  margin: 0;
-}
-
-main .cards {
-  display: flex;
-  gap: 15px;
-}
-
-main .cards .card {
-  text-align: center;
-  font-size: 25px;
-}
-
-main .cards .card p {
-  color: #000;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-main .cards .card .flip-card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin: 15px auto;
-}
-
-main .cards .card .top-half,
-main .cards .card .bottom-half,
-main .cards .card .top-flip,
-main .cards .card .bottom-flip {
-  color: #000000;
-  font-size: 37px;
-  font-weight: 900;
-  height: 43px;
-  width: 77px;
-  padding: 23px 7px;
-  overflow: hidden;
-  text-align: center;
-  will-change: transform !important;
-  font-family: 'Sen', sans-serif;
-}
-
-main .cards .card .top-half,
-main .cards .card .top-flip {
-  color: #643760;
-  border-radius: 20px 20px 0 0;
-  background-color: #E3B7E0;
-  font-family: 'Sen', sans-serif;
-}
-
-main .cards .card .top-half::before,
-main .cards .card .top-flip::before {
-  content: "";
-  background-color: #FFFFFF;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  position: absolute;
-  bottom: -5px;
-  left: -5px;
-}
-
-main .cards .card .top-half::after,
-main .cards .card .top-flip::after {
-  content: "";
-  background-color: #FFFFFF;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  position: absolute;
-  bottom: -5px;
-  right: -5px;
-  font-family: 'Sen', sans-serif;
-}
-
-main .cards .card .bottom-half,
-main .cards .card .bottom-flip {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  border-radius: 0 0 20px 20px;
-  background-color: #CBB4F6;
-  box-shadow: 0 4px 3px 0 #B5B5B6;
-}
-
-main .cards .card .bottom-half::before,
-main .cards .card .bottom-flip::before {
-  content: "";
-  background-color: #FFFFFF;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  position: absolute;
-  top: -5px;
-  left: -5px;
-}
-
-main .cards .card .bottom-half::after,
-main .cards .card .bottom-flip::after {
-  content: "";
-  background-color: #FFFFFF;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  position: absolute;
-  top: -5px;
-  right: -5px;
-}
-
-main .cards .card .top-flip {
-  position: absolute;
-  transform-origin: bottom;
-  transform: rotateX(0deg);
-  animation: flip-top 0.5s ease-in forwards;
-}
-
-main .cards .card .bottom-flip {
-  position: absolute;
-  bottom: 0;
-  transform-origin: top;
-  transform: rotateX(90deg);
-  animation: flip-bottom 0.5s ease-out 0.5s;
-}
-
-@media screen and (min-width: 700px) {
-  main h1 {
-    font-size: 31px;
-  }
-
-  main .cards {
-    gap: 25px;
-  }
-
-  main .cards .top-half,
-  main .cards .bottom-half,
-  main .cards .top-flip,
-  main .cards .bottom-flip {
-    font-size: 76px !important;
-    height: 80px !important;
-    width: 125px !important;
-    padding: 34px 7px !important;
-  }
-}
-
-.card {
-  border: none;
-}
 
 .sec-2-bg {
   background-image: url('../images/index/sec_2_bg.webp');
@@ -985,13 +789,6 @@ main .cards .card .bottom-flip {
   background-position: top left;
   -webkit-background-clip: text;
   color: transparent;
-  /* font-size:80px; */
-  /* letter-spacing:5px; */
-  /* font-weight:900;
-  font-weight:900; */
-  /* font-family: 'Genos', sans-serif; */
-  /* line-height:80px; */
-
 }
 
 /* partneer */
@@ -1006,13 +803,13 @@ main .cards .card .bottom-flip {
 
 /* Speaker*/
 
-/* sea summit*/
+/* Cruise Meetup*/
 .cruise-meetup1 {
   top: -50px;
   left: 0;
 }
 
-/* sea summit*/
+/* Cruise Meetup*/
 
 /* project */
 .responsive1 .owl-carousel .owl-dots.disabled,
@@ -1033,78 +830,58 @@ main .cards .card .bottom-flip {
 /* project */
 
 /* Experience */
+/* Background Section */
 .bg-creator {
-  background-image: url(../images/index/bg-creator.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../images/index/our-experience.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  position: relative;
+  padding: 60px 0;
 }
 
-@media only screen and (max-width: 992px) {
-  .bg_imgcreator {
-    width: 70%;
-  }
-
-  .titel {
-    margin-bottom: 0px;
-  }
-
-  .box-one {
-    transform: none;
-    padding: 20px;
-  }
-
-  .box-one h6 {
-    font-size: 18px;
-  }
-
-  .speaker-text h5 {
-    font-size: 25px;
-  }
+/* Image Styling */
+.bg-img-creator {
+  max-width: 45%;
+  height: auto;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-@media only screen and (max-width: 768px) {
-  .bg_imgcreator {
-    width: 80%;
-  }
+/* Hover Effect */
+.bg-img-creator:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
 
-  .numer {
-    font-size: 20px;
-  }
-
-  .investors {
-    font-size: 16px;
-  }
-
-  .box-one {
-    transform: none;
+/* Responsive Design */
+@media (max-width: 992px) {
+  .bg-img-creator {
+      max-width: 65%;
   }
 }
 
-@media only screen and (max-width: 768.99px) {
-  .bg_imgcreator {
-    width: 80%;
+@media (max-width: 768px) {
+  .bg-creator {
+      min-height: 50vh;
+      padding: 40px 0;
   }
 
-  .numer {
-    font-size: 20px;
-  }
-
-  .investors {
-    font-size: 16px;
-  }
-
-  .box-one {
-    transform: none;
+  .bg-img-creator {
+      max-width: 75%;
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .bg_imgcreator {
-    width: 90%;
+@media (max-width: 576px) {
+  .bg-creator {
+      min-height: 40vh;
+      padding: 30px 0;
+  }
+
+  .bg-img-creator {
+      max-width: 85%;
   }
 }
-
 /* Experience */
 
 /* partners */
@@ -1247,6 +1024,7 @@ main .cards .card .bottom-flip {
   }
 }
 
+/* first page */
 .overlay {
   position: absolute;
   top: 0;
@@ -1264,6 +1042,7 @@ main .cards .card .bottom-flip {
   border-radius: 10px;
   backdrop-filter: blur(5px);
 }
+/* first page */
 
 
 
@@ -1333,7 +1112,7 @@ main .cards .card .bottom-flip {
   }
 
   .bg-img {
-    background-image: url('../images/index/hero_mb_img.webp');
+    background-image: url('../images/index/hero-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1596,3 +1375,39 @@ img {
   -ms-user-select: none; /* Edge ke liye */
   pointer-events: none; /* Mouse interactions disable karne ke liye */
 }
+
+
+/* Login */
+/* Centering the modal */
+.modal-dialog {
+  max-width: 400px;
+}
+
+/* Custom modal styling */
+.custom-modal {
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Custom input fields */
+.custom-input {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Custom login button */
+.custom-btn {
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3;
+}
+/* Login */
