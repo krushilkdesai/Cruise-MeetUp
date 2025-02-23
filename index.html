@@ -18,18 +18,15 @@
      <header class="fixed-top bg-white shadow-sm">
           <nav class="navbar navbar-expand-lg navbar-light">
                <div class="container">
-                    <!-- Logo -->
                     <a class="navbar-brand p-0" href="index.html">
                          <img src="assets/images/index/logo.png" class="img-fluid" alt="Logo" style="max-height: 50px;">
                     </a>
 
-                    <!-- Navbar Toggler (For Mobile) -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <!-- Navbar Links -->
                     <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                          <ul class="navbar-nav mx-auto text-center">
                               <li class="nav-item">
@@ -49,91 +46,18 @@
                               </li>
                          </ul>
 
-                         <!-- Login Button (Triggers Modal) -->
                          <div class="text-center">
-                              <a href="#" class="btn btn-sponsor" data-bs-toggle="modal"
-                                   data-bs-target="#authModal">Login</a>
+                              <a href="#" class="btn btn-sponsor">Login</a>
                          </div>
                     </div>
                </div>
           </nav>
      </header>
-
-     <!-- Login Modal -->
-     <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-               <div class="modal-content custom-modal">
-                    <div class="modal-header border-0">
-                         <h5 class="modal-title text-center w-100">Login</h5>
-                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                         <!-- Nav Tabs -->
-                         <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="authTab" role="tablist">
-                              <li class="nav-item" role="presentation">
-                                   <button class="nav-link active" id="login-tab" data-bs-toggle="pill"
-                                        data-bs-target="#login" type="button" role="tab" aria-controls="login"
-                                        aria-selected="true">Login</button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                   <button class="nav-link" id="signup-tab" data-bs-toggle="pill"
-                                        data-bs-target="#signup" type="button" role="tab" aria-controls="signup"
-                                        aria-selected="false">Sign Up</button>
-                              </li>
-                         </ul>
-
-                         <!-- Tab Content -->
-                         <div class="tab-content" id="authTabContent">
-                              <!-- Login Form -->
-                              <div class="tab-pane fade show active" id="login" role="tabpanel"
-                                   aria-labelledby="login-tab">
-                                   <form>
-                                        <div class="mb-3">
-                                             <label for="login-username" class="form-label">Username</label>
-                                             <input type="text" class="form-control custom-input" id="login-username"
-                                                  placeholder="Enter your username">
-                                        </div>
-                                        <div class="mb-3">
-                                             <label for="login-password" class="form-label">Password</label>
-                                             <input type="password" class="form-control custom-input"
-                                                  id="login-password" placeholder="Enter your password">
-                                        </div>
-                                        <button type="submit" class="btn btn-sponsor custom-btn w-100">Login</button>
-                                   </form>
-                              </div>
-
-                              <!-- Sign Up Form -->
-                              <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
-                                   <form>
-                                        <div class="mb-3">
-                                             <label for="signup-username" class="form-label">Username</label>
-                                             <input type="text" class="form-control custom-input" id="signup-username"
-                                                  placeholder="Choose a username">
-                                        </div>
-                                        <div class="mb-3">
-                                             <label for="signup-email" class="form-label">Email</label>
-                                             <input type="email" class="form-control custom-input" id="signup-email"
-                                                  placeholder="Enter your email">
-                                        </div>
-                                        <div class="mb-3">
-                                             <label for="signup-password" class="form-label">Password</label>
-                                             <input type="password" class="form-control custom-input"
-                                                  id="signup-password" placeholder="Create a password">
-                                        </div>
-                                        <button type="submit" class="btn btn-sponsor custom-btn w-100">Sign Up</button>
-                                   </form>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </div>
-
      <!-- header section end -->
 
      <!-- hero section start -->
      <section id="homePage" class="hero bg-img" data-background="assets/images/hero-img.png">
-          <div class="overlay"></div> <!-- Dark overlay for better text contrast -->
+          <div class="overlay"></div> 
           <div class="container">
                <div class="hero__area d-flex flex-column align-items-center text-center">
                     <div class="row">
@@ -151,9 +75,6 @@
                </div>
           </div>
      </section>
-     
-     
-
      <!-- hero section end -->
 
      <!-- sec-2 start-->
@@ -291,7 +212,6 @@
      <!-- sec-6 start -->
      <section class="py-3 bg-bucket" id="bucket-list">
           <div class="container px-3">
-               <!-- Section Title -->
                <div class="text-center mb-3">
                     <div class="text-p">
                          <p class="mb-0">THE BUCKET LIST</p>
@@ -299,13 +219,11 @@
                     <h4 class="titel fw-semibold fs-7 color-pink mb-4">What to Expect On Board?</h4>
                </div>
 
-               <!-- Bootstrap Carousel -->
                <div class="row justify-content-center position-relative pb-50">
                     <div class="bg-color d-none d-md-block col-12"></div>
 
                     <div id="bucketCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                          <div class="carousel-inner">
-                              <!-- Slide 1 -->
                               <div class="carousel-item active">
                                    <div class="row justify-content-center g-3">
                                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
@@ -326,7 +244,6 @@
                                    </div>
                               </div>
 
-                              <!-- Slide 2 -->
                               <div class="carousel-item">
                                    <div class="row justify-content-center g-3">
                                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
@@ -369,7 +286,6 @@
                               </div>
                          </div>
 
-                         <!-- Carousel Controls -->
                          <button class="carousel-control-prev" type="button" data-bs-target="#bucketCarousel"
                               data-bs-slide="prev">
                               <span class="carousel-control-prev-icon"></span>
@@ -676,7 +592,7 @@
                          <img src="assets/images/index/partner4.webp" class="partner-img" alt="Partner 4">
                          <img src="assets/images/index/partner5.webp" class="partner-img" alt="Partner 5">
                          <img src="assets/images/index/partner6.webp" class="partner-img" alt="Partner 6">
-                         <!-- Duplicate for smooth looping -->
+                         
                          <img src="assets/images/index/partner1.webp" class="partner-img" alt="Partner 1">
                          <img src="assets/images/index/partner2.webp" class="partner-img" alt="Partner 2">
                          <img src="assets/images/index/partner3.webp" class="partner-img" alt="Partner 3">

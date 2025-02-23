@@ -63,7 +63,6 @@ body {
   height: 50vh; /* Full viewport height */
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .bg-image {
       min-height: 40vh; /* Reduce height for tablets */
@@ -416,8 +415,6 @@ p {
   margin-bottom: 50px;
 }
 
-/* categories */
-/* .card{border: none;border-radius: 20px;background: none;box-shadow: none} */
 .category-img {
   border-radius: 18px 18px 0px 0px;
 }
@@ -434,7 +431,6 @@ p {
   margin: 1.25rem !important;
 }
 
-/* #category {margin: 0px auto; padding: 0 5%;width: 80%;position: relative;} */
 .category .item {
   position: relative;
   z-index: 100;
@@ -621,13 +617,11 @@ p {
     font-size: 50px;
   }
 
-  /* .bg-img{background-position:left; padding:150px 0px 100px 0px} */
   .titel {
     margin-bottom: 10px;
     margin-top: 10px;
   }
 
-  /* .p-color, .box-one h6, .div-btn{text-align: center;} */
   .box-one {
     transform: none;
   }
@@ -666,7 +660,6 @@ p {
     margin-top: 10px;
   }
 
-  /* .p-color, .box-one h6, .div-btn{text-align: center;} */
   .box-one {
     transform: none;
   }
@@ -790,7 +783,6 @@ p {
   -webkit-background-clip: text;
   color: transparent;
 }
-
 /* partneer */
 
 /* Speaker*/
@@ -800,18 +792,14 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 /* Speaker*/
 
-/* Cruise Meetup*/
 .cruise-meetup1 {
   top: -50px;
   left: 0;
 }
 
-/* Cruise Meetup*/
 
-/* project */
 .responsive1 .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
   display: block !important;
@@ -826,11 +814,7 @@ p {
 }
 
 
-
-/* project */
-
 /* Experience */
-/* Background Section */
 .bg-creator {
   background: url("../images/index/our-experience.png") center/cover no-repeat;
   display: flex;
@@ -841,20 +825,17 @@ p {
   padding: 60px 0;
 }
 
-/* Image Styling */
 .bg-img-creator {
   max-width: 45%;
   height: auto;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-/* Hover Effect */
 .bg-img-creator:hover {
   transform: scale(1.05);
   opacity: 0.9;
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
   .bg-img-creator {
       max-width: 65%;
@@ -892,20 +873,17 @@ p {
   padding: 20px 0;
 }
 
-/* Flexbox for scrolling effect */
 .partners-logos {
   display: flex;
   gap: 30px;
   animation: scroll 15s linear infinite;
 }
 
-/* Ensuring responsive logo size */
 .partner-img {
   max-height: 80px; /* Default height */
   width: auto;
 }
 
-/* Make images smaller on mobile */
 @media (max-width: 768px) {
   .partner-img {
       max-height: 50px; /* Adjusted for smaller screens */
@@ -916,7 +894,6 @@ p {
   }
 }
 
-/* Infinite scrolling animation */
 @keyframes scroll {
   from {
       transform: translateX(0);
@@ -930,20 +907,17 @@ p {
 
 
 /* */
-/* Fade-in animation for each category */
 .fade-in {
   opacity: 0;
   transform: translateY(50px);
   animation: fadeUp 1s ease-in-out forwards;
 }
 
-/* Delay each category for smooth animation */
 .fade-in:nth-child(1) { animation-delay: 0.2s; }
 .fade-in:nth-child(2) { animation-delay: 0.4s; }
 .fade-in:nth-child(3) { animation-delay: 0.6s; }
 .fade-in:nth-child(4) { animation-delay: 0.8s; }
 
-/* Keyframe for smooth fading effect */
 @keyframes fadeUp {
   from {
       opacity: 0;
@@ -955,7 +929,6 @@ p {
   }
 }
 
-/* Responsive Optimizations */
 @media (max-width: 768px) {
   .fade-in {
       animation-duration: 1.5s;
@@ -1037,7 +1010,7 @@ p {
 .hero-content {
   position: relative;
   z-index: 2;
-  background: rgba(255, 255, 255, 0.1); /* Light glass effect */
+  background: rgba(255, 255, 255, 0.1); 
   padding: 30px;
   border-radius: 10px;
   backdrop-filter: blur(5px);
@@ -1376,38 +1349,3 @@ img {
   pointer-events: none; /* Mouse interactions disable karne ke liye */
 }
 
-
-/* Login */
-/* Centering the modal */
-.modal-dialog {
-  max-width: 400px;
-}
-
-/* Custom modal styling */
-.custom-modal {
-  border-radius: 15px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  background: #f9f9f9;
-}
-
-/* Custom input fields */
-.custom-input {
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-/* Custom login button */
-.custom-btn {
-  background-color: #007bff;
-  color: white;
-  border-radius: 8px;
-  padding: 10px;
-  font-weight: bold;
-}
-
-.custom-btn:hover {
-  background-color: #0056b3;
-}
-/* Login */
